@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1c0028"
+    android:gravity=""
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="3"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/a1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2.8"
+            android:background="@drawable/sb3"
+            android:completionThreshold="1"
+            android:hint="Medicine Name"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck"></AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/search_medicine"
+            android:layout_width="30sp"
+            android:gravity="center"
+            android:layout_weight="0.2"
+            android:layout_height="30sp"
+            android:layout_marginLeft="20sp"
+            android:visibility="gone"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/search_icon"
+            android:paddingStart="15dp"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:text="Time :     "
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="M"
+                android:id="@+id/M"
+                android:textColor="@color/white"></CheckBox>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:id="@+id/A"
+                android:textColor="@color/white"></CheckBox>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N"
+                android:id="@+id/N"
+                android:textColor="@color/white"></CheckBox>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:text="Quantity :     "
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="1"
+                android:id="@+id/one"
+                android:textColor="@color/white"></CheckBox>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/2"
+                android:id="@+id/half"
+                android:textColor="@color/white"></CheckBox>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/two"
+                android:textColor="@color/white"></CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When To Take :"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="A"
+                android:id="@+id/aftermeal"
+                android:textColor="@color/white"></CheckBox>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:id="@+id/beforemeal"
+                android:textColor="@color/white"></CheckBox>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/ok"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Done"
+        ></Button>
+</LinearLayout>
+
